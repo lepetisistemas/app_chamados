@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.lepe.sistemaos.sistemadeordensdeservico.PrincipalActivity">
+
+    <ScrollView
+        android:id="@+id/scvCadastro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <RelativeLayout
+            android:id="@+id/rlyPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="495dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btnSalvar"
+                android:layout_alignRight="@+id/btnSalvar"
+                android:layout_alignTop="@+id/txtDatainicio"
+                android:text="@string/app_data"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDatainicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tituloData"
+                android:layout_toRightOf="@+id/tituloData"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/tituloAssunto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDatainicio"
+                android:layout_marginTop="19dp"
+                android:layout_toLeftOf="@+id/spnEmpresa"
+                android:layout_toStartOf="@+id/spnEmpresa"
+                android:text="@string/app_assunto"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtAssunto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tituloAssunto"
+                android:layout_toEndOf="@+id/tituloAssunto"
+                android:layout_toRightOf="@+id/tituloAssunto"
+                android:ems="10"
+                android:hint="Digite o assunto do chamado..."
+                android:inputType="textCapCharacters|textPersonName"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tituloSessao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edtAssunto"
+                android:text="@string/app_sessao"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSessao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/edtAssunto"
+                android:layout_toEndOf="@+id/tituloSessao"
+                android:layout_toRightOf="@+id/tituloSessao"
+                android:ems="10"
+                android:hint="(Opcional)"
+                android:inputType="textCapCharacters|textPersonName"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tituloEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edtSessao"
+                android:text="@string/app_empresa"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/edtSessao"
+                android:layout_toEndOf="@+id/tituloEmpresa"
+                android:layout_toRightOf="@+id/tituloEmpresa"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/tituloCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spnEmpresa"
+                android:layout_marginTop="11dp"
+                android:text="@string/app_categoria"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tituloCategoria"
+                android:layout_toEndOf="@+id/tituloCategoria"
+                android:layout_toRightOf="@+id/tituloCategoria" />
+
+            <TextView
+                android:id="@+id/TituloSolicitante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spnCategoria"
+                android:layout_marginTop="12dp"
+                android:text="@string/app_solicitante"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnSolicitante"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/TituloSolicitante"
+                android:layout_toEndOf="@+id/TituloSolicitante" />
+
+            <TextView
+                android:id="@+id/tituloComputador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spnAnalista"
+                android:layout_marginTop="11dp"
+                android:text="@string/app_computador"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnComputador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tituloComputador"
+                android:layout_toEndOf="@+id/tituloEquipamento" />
+
+            <TextView
+                android:id="@+id/tituloEquipamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spnComputador"
+                android:layout_marginTop="14dp"
+                android:text="@string/app_equipamento"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnEquipamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spnComputador"
+                android:layout_alignStart="@+id/spnComputador"
+                android:layout_alignTop="@+id/tituloEquipamento" />
+
+            <TextView
+                android:id="@+id/tituloPrioridade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spnEquipamento"
+                android:layout_marginTop="13dp"
+                android:text="@string/app_prioridade"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnPrioridade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tituloPrioridade"
+                android:layout_toEndOf="@+id/tituloPrioridade"
+                android:layout_toRightOf="@+id/tituloPrioridade" />
+
+            <TextView
+                android:id="@+id/tituloDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spnPrioridade"
+                android:layout_marginTop="14dp"
+                android:text="@string/app_descricao"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_alignLeft="@+id/spnSolicitante"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/spnSolicitante"
+                android:layout_alignTop="@+id/tituloDescricao"
+                android:ems="10"
+                android:hint="Digite a descrição do problema..."
+                android:inputType="textCapSentences|textMultiLine|textPersonName"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="48dp"
+                android:layout_height="28dp"
+                android:layout_alignLeft="@+id/edtDescricao"
+                android:layout_alignStart="@+id/edtDescricao"
+                android:layout_below="@+id/edtDescricao"
+                android:background="@mipmap/ic_botao_salvar" />
+
+            <Button
+                android:id="@+id/btnDesfazer"
+                android:layout_width="48dp"
+                android:layout_height="28dp"
+                android:layout_alignBaseline="@+id/btnSalvar"
+                android:layout_alignBottom="@+id/btnSalvar"
+                android:layout_alignLeft="@+id/txtDatainicio"
+                android:layout_alignStart="@+id/txtDatainicio"
+                android:background="@mipmap/ic_botao_desfazer" />
+
+            <TextView
+                android:id="@+id/tituloAnalista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spnSolicitante"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_analista"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnAnalista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tituloAnalista"
+                android:layout_toRightOf="@+id/tituloAnalista" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Abertura Chamados TI - Em Campo</string>
+    <string name="titulo_activity">Sistema de OS</string>
+    <string name="app_data">Data de Solicitação:</string>
+    <string name="app_assunto">Assunto:</string>
+    <string name="app_sessao">Sessão/Relatório/Tipo:</string>
+    <string name="app_empresa">Empresa:</string>
+    <string name="app_categoria">Categoria:</string>
+    <string name="app_solicitante">Solicitante:</string>
+    <string name="app_computador">Computador do Solicitante:</string>
+    <string name="app_equipamento">Equipamento C/ Problema:</string>
+    <string name="app_prioridade">Prioridade:</string>
+    <string name="app_descricao">Descrição:</string>
+    <string name="app_analista">Analista:</string>
+</resources>
