@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Abertura Chamados TI - Em Campo</string>
+    <string name="app_name2">Abertura de Chamados</string>
+    <string name="app_name3">Consulta de Chamados</string>
+    <string name="app_data">Data de Solicitação:</string>
+    <string name="app_assunto">Assunto:</string>
+    <string name="app_sessao">Sessão/Relatório/Tipo:</string>
+    <string name="app_empresa">Empresa:</string>
+    <string name="app_categoria">Categoria:</string>
+    <string name="app_solicitante">Solicitante:</string>
+    <string name="app_computador">Computador do Solicitante:</string>
+    <string name="app_equipamento">Equipamento C/ Problema:</string>
+    <string name="app_prioridade">Prioridade:</string>
+    <string name="app_descricao">Descrição:</string>
+    <string name="app_analista">Analista:</string>
+    <string name="app_data_chamado">Data:</string>
+    <string name="app_comp_chamado">Computador:</string>
+    <string name="app_equip_chamado">Equipamento:</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="app_lepe">LEPE INDÚSTRIA E COMÉRCIO LTDA</string>
+    <string name="app_ti">Departamento de Tecnologia da Informação</string>
+    <string name="app_abrir">Abrir chamados...</string>
+    <string name="app_consultar">Consultar chamados...</string>
+    <string name="title_activity_chamado2">Chamado2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_voltar">Voltar</string>
+    <string name="app_ir">Avançar</string>
+
+    <string name="digite_assunto_chamado">DIGITE O ASSUNTO DO CHAMADO...</string>
+    <string name="digite_desc_problema">DIGITE A DESCRIÇÃO DO PROBLEMA...</string>
+    <string name="informacao_adicional">INFORMAÇÃO ADICIONAL (OPICIONAL)...</string>
+    <string name="data_solicitacao">Data</string>
+    <string name="conteudo_lista">lista</string>
+    <string name="app_chamados">Chamados LEPE</string>
+    <string name="app_excluir">Excluir</string>
+    <string name="app_cancelar">Cancelar</string>
+    <string name="rotulo_excluir_chamado">Confirme o número do chamado:</string>
+
+</resources>
