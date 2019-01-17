@@ -2,6 +2,7 @@ package br.com.lepe.sistemaos.sistemadeordensdeservico;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,6 +39,9 @@ public class ConsultaActivity extends AppCompatActivity {
         //Conta quantos chamados foram abertos
         contadorRegistros();
 
+        //Toast.makeText(getApplicationContext(), "Clique em um chamado para exclui-lo!", Toast.LENGTH_LONG).show();
+        Snackbar.make(this.findViewById(android.R.id.content), "Clique em um chamado para exclui-lo!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+
         chamados.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -56,8 +60,7 @@ public class ConsultaActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (edtNumChamado.getText().toString().isEmpty()) {
                             Toast.makeText(getApplicationContext(), "Chamado inválido!", Toast.LENGTH_LONG).show();
-                        }
-                        else {
+                        } else {
                             boolean excluidoSucesso = osbd.excluirChamado(Integer.parseInt(edtNumChamado.getText().toString()));
                             if (excluidoSucesso){
                                 listaChamados();

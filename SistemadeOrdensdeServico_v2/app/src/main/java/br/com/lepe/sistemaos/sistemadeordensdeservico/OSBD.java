@@ -371,18 +371,17 @@ public class OSBD {
         int osId = 0;
         boolean excluido = false;
         try {
-            getResultSet = bancoDados.select("SELECT os_id FROM lepe.os WHERE os_id ='" + IdChamadoSelecionado + "'");
+            getResultSet = bancoDados.select("SELECT os_id FROM lepe.os WHERE os_id ='" + IdChamadoSelecionado + "' AND gravado = false");
             if (getResultSet != null){
                 while (getResultSet.next()){
                     osId = getResultSet.getInt("os_id");
                 }
             }
             if (osId != 0){
-                resultSet = bancoDados.execute("DELETE FROM lepe.os WHERE os_id ='" + IdChamadoSelecionado + "' AND gravado = false");
+                resultSet = bancoDados.execute("DELETE FROM lepe.os WHERE os_id ='" + IdChamadoSelecionado + "'");
                 excluido = true;
-            } else {
-                excluido = false;
             }
+
         }catch (Exception ex){
             ex.printStackTrace();
         }

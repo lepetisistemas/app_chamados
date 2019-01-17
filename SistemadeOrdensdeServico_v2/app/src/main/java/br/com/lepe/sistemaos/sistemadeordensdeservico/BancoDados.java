@@ -6,11 +6,14 @@ import java.sql.ResultSet;
 
 public class BancoDados implements Runnable{
     private Connection conn;
-    private String host = "192.168.7.10";
+    //private String host = "192.168.7.10";
+    private String host = "192.168.13.102";
     private String db = "lepe";
-    private int port = 5432;
+    //private int port = 5432;
+    private int port = 5433;
     private String user = "postgres";
-    private String pass = "postgres";
+    //private String pass = "postgres";
+    private String pass = "123456";
     private String url = "jdbc:postgresql://%s:%d/%s";
 
     public BancoDados() {
